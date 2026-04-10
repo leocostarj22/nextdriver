@@ -192,7 +192,7 @@ function LeadInterestPrompt() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <LeadInterestPrompt />
       <div className="min-h-screen flex flex-col">
@@ -201,6 +201,7 @@ export default function App() {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/nextdriver" element={<Home />} />
               <Route path="/nextdrive" element={<Home />} />
               <Route path="/sobre" element={<About />} />
               <Route path="/servicos" element={<Services />} />
