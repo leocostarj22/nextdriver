@@ -201,8 +201,6 @@ export default function App() {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/nextdriver" element={<Home />} />
-              <Route path="/nextdrive" element={<Home />} />
               <Route path="/sobre" element={<About />} />
               <Route path="/servicos" element={<Services />} />
               <Route path="/marcacao" element={<Booking />} />
